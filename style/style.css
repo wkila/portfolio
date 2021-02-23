@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+.page {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 870px;
+    background-color: #CC9863;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    position: absolute;
+    display: block;
+    width: 99vw;
+}
+
+.imgHEAD {
+    top: 0;
+    left: 0;
+}
+
+.imgDOWN {
+    bottom: 95px;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+
+
+.titleBlock {
+    padding: 10px 50px 10px 50px;
+    background-color: #0D001D;
+    color: white;
+    font-size: 5rem;
+}
+
+.marginBlock {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.imgWhoIm {
+    display: block;
+    width: 1000px;
+}
+
+/* titles */
+
+.whoIs {
+    display: flex;
+    padding-top: 200px;
+}
+
+.blockFeatures {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.blockInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blockWho {
+    width: 500px;
+}
+
+.title {
+    font-size: 8rem;
+    color: #6A61FA;
+}
+
+/* info */
+
+.blockHeaderTitle {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 200px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #FF6584;
+    position: absolute;
+    left: 44%;
+    top: 63%;
+}
+
+.blockInfoSkills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.skillInfoBlock {
+    width: 550px;
+}
+
+/* title */
+
+.infoTitle {
+    font-size: 5rem;
+    color: #3F3D56;
+}
+
+.infoLessTitle {
+    font-size: 3rem;
+    color: #3F3D56;
+    font-weight: bold;
+}
+
+/* cat */
+
+.backgroundTitle {
+    color: white;
+    background: #2F2E41;
+    font-size: 4rem; 
+    padding: 3px;
+}
+
+.border {
+    border: 1px solid #707070;
+    background-color: #fff;
+    color: #2F2E41;
+    padding: 2px;
+}
+
+.catBlock {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.blockCat {
+    padding-bottom: 30px;
+}
+
+.titleCat {
+    font-size: 5rem;
+    font-weight: bold;
+    background: #2F2E41;
+    color: #fff;
+    padding: 2px;
+    width: 870px;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.blockType {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.input {
+    padding: 8px 40px;
+    border-radius: 10px;
+    border: 2px solid #2F2E41;
+}
+
+.form {
+    padding-top: 30px;
+}
+
+/* rows */
+
+.jsBlock {
+    width: 410px;
+}
+
+.htmlBlock {
+    width: 350px;
+}
+
+.rowFirst {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+.rowSecond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink {
+    color: white;
+    background-color: #FF6584;
+    padding: 2px;
+}
+
+.paddingImg {
+    padding-bottom: 20px;
+}
+
+.imgCircle {
+    width: 475px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 700px;
+    background-color: #2F2E41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.titleBlock {
+    z-index: 2;
+}
+
+.footerCircle {
+    z-index: 1;
+    top: 7%;
+    left: 46%;
+    width: 150px;
+    height: 150px;
+}
+
+.contactBlock {
+    margin-top: 50px;
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    background: #0D001D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContact {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btnBlock {
+    text-align: center;
+}
+
+button {
+    background: #A0616A;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+    border: none;
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

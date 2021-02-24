@@ -1,5 +1,4 @@
 const mainTitleBlock = document.querySelector(".titleBlock"),
-      btn = document.querySelector(".changeBtn"),
       title = document.querySelector(".mainTitle");
 
 // ширина блока анимация
@@ -27,6 +26,8 @@ window.onload = function () {
     }
     setTimeout(fTypeText, 1000);
 };
+
+// анимация выхода
 
 let duration;
 let widthThis;
@@ -65,3 +66,54 @@ if (animItems.length > 0) {
     }
     animOnScroll();
 }
+
+// анимация глаз (нахуй оно надо, сделать самой последней правкой)
+
+// анимация выхода анимаций
+
+let input = document.querySelector(".input"),
+    btnInput = document.querySelector(".inputBtn"),
+    displayZagl = document.querySelectorAll(".displayAnim"),
+    titleCat = document.querySelector(".titleCat");
+
+let validProperty = "OK BOSS";
+let maxDisplay = displayZagl.length;
+let wrongAsk = "This cat is angry right now, ASK NORMAL";
+
+btnInput.addEventListener("click", () =>{
+    let valid = input.value;
+    console.log(valid);
+    if (valid == validProperty) {
+        for (let i = 0; i <= maxDisplay; i++) {
+            maxDisplay[i].classList.remove("displayAnim");
+        }
+    }else if(valid != validProperty) {
+        function fRemoveText() {  
+            let anyString = titleCat.textContent;
+            let i = 0;
+            let fRemove = function() {
+              if (i <= anyString.length) {
+                titleCat.innerHTML = anyString.substring(0, anyString.length - i);
+                setTimeout(arguments.callee, 100);
+              }
+              i++;
+            }
+            setTimeout(fRemove, 0);
+        };
+        fRemoveText();
+        
+        function fTypeText() {
+            let anyString = wrongAsk;
+            let i = 0;
+            let fType = function() {
+              if (i <= anyString.length) {
+                titleCat.innerHTML = anyString.substring(0, i);
+                setTimeout(arguments.callee, 200);
+              }
+              i++;
+            };
+            fType();
+        }
+        setTimeout(fTypeText, 5000);
+    }
+});

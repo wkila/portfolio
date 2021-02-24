@@ -73,28 +73,30 @@ if (animItems.length > 0) {
 
 let input = document.querySelector(".input"),
     btnInput = document.querySelector(".inputBtn"),
-    displayZagl = document.querySelectorAll(".displayAnim"),
+    displayNone = document.querySelectorAll(".displayAnim"),
     titleCat = document.querySelector(".titleCat");
 
-let validProperty = "OK BOSS";
-let maxDisplay = displayZagl.length;
+let validProperty = "OK, BOSS";
 let wrongAsk = "This cat is angry right now, ASK NORMAL";
+let durationRemove = 200;
 
 btnInput.addEventListener("click", () =>{
     let valid = input.value;
     console.log(valid);
     if (valid == validProperty) {
-        for (let i = 0; i <= maxDisplay; i++) {
-            maxDisplay[i].classList.remove("displayAnim");
+        for (let i = 0; i <= displayNone.length; i++) {
+            displayNone[i].classList.remove("displayAnim");
         }
     }else if(valid != validProperty) {
+        let lengthCallBack = titleCat.textContent.length;
+        let maxtime = durationRemove * lengthCallBack;
         function fRemoveText() {  
             let anyString = titleCat.textContent;
             let i = 0;
             let fRemove = function() {
               if (i <= anyString.length) {
                 titleCat.innerHTML = anyString.substring(0, anyString.length - i);
-                setTimeout(arguments.callee, 100);
+                setTimeout(arguments.callee, durationRemove);
               }
               i++;
             }
@@ -114,6 +116,6 @@ btnInput.addEventListener("click", () =>{
             };
             fType();
         }
-        setTimeout(fTypeText, 5000);
+        setTimeout(fTypeText, maxtime);
     }
 });

@@ -24,6 +24,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .img {
@@ -46,8 +47,11 @@ html {
 
 
 .titleBlock {
-    padding: 10px 50px 10px 50px;
     background-color: #0D001D;
+}
+
+.mainTitle {
+    padding: 10px 50px 10px 50px;
     color: white;
     font-size: 5rem;
 }
@@ -247,6 +251,11 @@ html {
     left: 46%;
     width: 150px;
     height: 150px;
+}
+
+.titleFooter {
+    background-color: #0D001D;
+    z-index: 2;
 }
 
 .contactBlock {

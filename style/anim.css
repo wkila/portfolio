@@ -1,0 +1,37 @@
+.anim {
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+
+.mainTitle {
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+      width: 0px;
+    }
+      
+    to {
+      width: 355px;
+    }
+}
+
+.title span {
+    display: inline-block;
+    white-space: pre;
+    animation: type .2s ease-in;
+}
+
+.animBlock {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+
+.animBlock.active {
+    transform: translate(0px, 0);
+    opacity: 1;
+}
+
+@keyframes type { 60%, 70% { transform: scale(2); } }

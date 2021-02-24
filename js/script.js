@@ -69,7 +69,7 @@ if (animItems.length > 0) {
 
 // анимация глаз (нахуй оно надо, сделать самой последней правкой)
 
-// анимация выхода анимаций
+// анимация пароля
 
 let input = document.querySelector(".input"),
     btnInput = document.querySelector(".inputBtn"),

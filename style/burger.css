@@ -1,0 +1,102 @@
+.burgerBlock {
+    width: 50px;
+    height: 30px;
+    /* margin: 200px auto; ОШИБКА!!! */
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 40px;
+    display: block;
+}
+  
+.line {
+    width: 45px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #C87929;
+    transform: rotate(0deg);
+    transition: transform .2s linear;
+}
+  
+.up {
+    position: absolute;
+    top: 0;
+}
+  
+.middle {
+    position: absolute;
+    top: 50%;
+    top: 50%;
+}
+  
+.down {
+    position: absolute;
+    top: 100%;
+}
+  
+.upLine {
+    transform: rotate(45deg) translate(10px, 12px);
+    transition: transform linear .2s;
+
+}
+  
+.hidden {
+    visibility: hidden;
+    transition: visibility .05s linear;
+}
+  
+.downLine {
+    transition: transform linear .2s;
+    transform: rotate(-45deg) translate(11px, -11px);
+    
+}
+
+/* menu burger */
+
+.none {
+    display: none;
+}
+
+.mainHeaderOpen {
+}
+
+.headerPosition {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.burgerMenu {
+    position: absolute;
+}
+
+.animBurger {
+    transform: translate(0, 0px);
+}
+
+.headerInner {
+    transform: translate(-120%, 0px);
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transition: all .8s ease 0s;
+}
+
+.headerInner.menuActive {
+    width: 325px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burgerNav {
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-decoration: none;
+    display: block;
+}

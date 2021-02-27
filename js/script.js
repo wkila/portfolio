@@ -119,3 +119,38 @@ btnInput.addEventListener("click", () =>{
         setTimeout(fTypeText, maxtime);
     }
 });
+
+// burger
+
+// let burgerBlock = document.querySelector(".burgerBlock"),
+//     lines = document.querySelectorAll(".line"),
+//     navLink = document.querySelectorAll(".contactBurger"),
+//     headerInner = document.querySelector(".burgerMenu");
+
+// burgerBlock.addEventListener("mouseenter", () => {
+//   for (let i = 0; i <= lines.length; i++) {
+//     if (lines[i].classList.contains("up")) {
+//       lines[i].classList.add("upLine");
+//     }else if (lines[i].classList.contains("down")) {
+//       lines[i].classList.add("downLine");
+//     }else {
+//       lines[i].classList.add("hidden");
+//     }
+//   }
+// });
+
+// burgerBlock.addEventListener("mouseleave", () => {
+//   for (let i = 0; i <= lines.length; i++) {
+//     if (lines[i].classList.contains("upLine")) {
+//       lines[i].classList.remove("upLine");
+//     }else if (lines[i].classList.contains("downLine")) {
+//       lines[i].classList.remove("downLine");
+//     }else {
+//       lines[i].classList.remove("hidden");
+//     }
+//   }
+// });
+
+// burgerBlock.addEventListener("click", () => {
+    
+// });
